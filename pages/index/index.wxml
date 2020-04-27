@@ -1,0 +1,32 @@
+
+<view class="user">
+  <van-skeleton
+    title
+    avatar
+    row="3"
+    loading="{{ loading }}"
+  >
+    <view class="flex info">
+      <image src="{{ userInfo.avatarUrl }}" class="avatar"></image>
+      <view class="userInfo">
+        <view class="name">{{ userInfo.nickname }}</view>
+        <view class="level">{{ userInfo.level }}</view>
+      </view>
+    </view>
+  </van-skeleton>
+</view>
+
+<view class="song">
+  <view class="list flex" wx:for="{{ playlist }}" wx:key="playlist">
+    <image class="song-img" src="{{ item.coverImgUrl }}"></image>
+    <image
+     
+      
+    />
+    <view class="info flex">
+      <view class="tt">{{ item.name }}</view>
+      <view class="num">{{ item.trackCount }}首</view>
+    </view>
+  </view>
+</view>
+

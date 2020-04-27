@@ -1,0 +1,27 @@
+/**全局**/
+page{
+  background: #F4F4F4;
+  font-size: 28rpx;
+  color: #333;
+}
+.container {
+  box-sizing: border-box;
+} 
+
+/* 清除浮动  */
+.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; } 
+
+/* 溢出……  */
+.ellips{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* flex */
+.flex{
+  display: flex;
+}
+

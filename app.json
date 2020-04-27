@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    
+    "pages/user/user",
+    "pages/info/info"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarBackgroundColor": "#c20c0c",
+    "backgroundColor": "#c20c0c"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序查询附近门店与导航"
+    }
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true,
+  "enablePullDownRefresh": true,
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "miniprogram_npm/@vant/weapp/button/index",
+    "van-field": "miniprogram_npm/@vant/weapp/field/index",
+    "van-skeleton": "miniprogram_npm/@vant/weapp/skeleton/index",
+    "van-image": "miniprogram_npm/@vant/weapp/image/index",
+    "van-cell": "miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "miniprogram_npm/@vant/weapp/cell-group/index"
+  }
+}

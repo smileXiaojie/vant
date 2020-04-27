@@ -1,0 +1,6 @@
+<van-cell-group>
+  <block wx:for="{{ list }}" wx:key="list">
+    <van-cell title="{{ item.title }}" value="内容" label="{{ item.artist_name }} - 《{{ item.album_title }}》" />
+  </block>
+  
+</van-cell-group>

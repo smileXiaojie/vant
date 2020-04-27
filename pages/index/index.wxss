@@ -1,0 +1,56 @@
+/* pages/index/index.wxss */
+.user{
+  height: 100rpx;
+  background-color: #0000004f;
+  padding: 100rpx 20rpx;
+}
+.user .info{
+height: 100rpx;
+}
+.user .avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.userInfo{
+  color: #fff;
+  margin-left: 20rpx;
+}
+.userInfo .name{
+  font-weight: bold;
+  font-size: 24rpx;
+  line-height: 60rpx;
+}
+.userInfo .lever{
+  display: inline-block;
+  line-height: 50rpx;
+  font-size: 22rpx;
+  width: 100rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  background-color: #0000002e;
+  border: 1px solid #fff;
+}
+
+.song{
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+.song .song-img{
+  width: 100rpx;
+  height:100rpx;
+  border-radius:20rpx;
+}
+.song .info{
+  flex-direction: column;
+  height: 100rpx;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}
+.song .info .tt{
+  font-size: 24rpx;
+}
+.song .info .num{
+  font-size: 22rpx;
+  color: #ccc;
+}
