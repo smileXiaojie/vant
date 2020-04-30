@@ -2,11 +2,24 @@
 .user{
   height: 100rpx;
   background-color: #0000004f;
-  padding: 100rpx 20rpx;
+  padding: 100rpx 0;
+  position: relative;
+}
+.user .back,.user .backImg{
+  width:100%;
+  height: 300rpx;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 2;
 }
 .user .info{
-height: 100rpx;
+  position: absolute;
+  z-index: 3;
+  padding: 0 20rpx;
+  height: 100rpx;
 }
+
 .user .avatar{
   width: 100rpx;
   height: 100rpx;
@@ -21,25 +34,29 @@ height: 100rpx;
   font-size: 24rpx;
   line-height: 60rpx;
 }
-.userInfo .lever{
+.userInfo .level{
   display: inline-block;
-  line-height: 50rpx;
   font-size: 22rpx;
-  width: 100rpx;
+  width: 70rpx;
   height: 30rpx;
   border-radius: 30rpx;
-  background-color: #0000002e;
-  border: 1px solid #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .song{
   margin-top: 20rpx;
   padding: 20rpx;
+  background-color: #fff;
+}
+.song .list{
+  padding: 10rpx 0;
 }
 .song .song-img{
   width: 100rpx;
   height:100rpx;
   border-radius:20rpx;
+  background-color: #f2f2f2;
 }
 .song .info{
   flex-direction: column;

@@ -4,7 +4,7 @@ import './miniprogram_npm/weapp-cookie/index'
 App({
     onLaunch: function() {
         try {
-            this.globalData.userInfo = wx.getStorageSync('userInfo');
+            this.globalData.uid = wx.getStorageSync('uid');
         } catch (e) {
 
         }
@@ -17,12 +17,20 @@ App({
   // 全局变量
   globalData: {
       version: "0.0.1", //版本号
-      userInfo: null, //用户信息
-      apiUrl: apiUrl,
-      keyword: '', //搜索商品关键字
-      sys_info: null, //用户系统信息
-      latitude: null, //经纬度
-      longitude: null, //经纬度
+      uid: 297657459, //用户id 默认是我自己用户id
+      apiUrl:  apiUrl, //api接口地址
+      playList: [   //播放列表
+        {
+            p_name : '',     //歌曲名
+            p_id : '',       //歌曲id
+            ar_name : '',    //歌手
+            al_name :  '',   //专辑
+            picUrl : '',     //专辑图片
+        }
+      ],
+      sys_info: null,  //用户系统信息
+      latitude: null,  //经纬度
+      longitude: null //经纬度
   },
   // 更新globalData数据
   updateAppData(obj) {
@@ -31,5 +39,6 @@ App({
           let key = keys[i];
           this.globalData[key] = obj[key]
       }
-  }
+  },
+  
 })  

@@ -1,0 +1,19 @@
+<!--pages/play/play.wxml-->
+<view class="back" style="background-image:url('{{ backImg }}');">
+  <van-notice-bar
+    backgroundColor="rgba(0, 0, 0, 0)"
+    color="#fff"
+    custom-class="notice"
+    text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+  />
+  <view class="name">mingzi ></view>
+
+  <view class="album flex">
+      <image class="aag" src="../../image/aag.png"></image>
+      <image class="album-img" src="../../image/play.png"></image>
+      
+  </view>
+  
+  <van-slider value="50" bind:change="onChange" />
+</view>
+

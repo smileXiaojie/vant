@@ -24,10 +24,12 @@ Page({
         name : '',
         id : 0,
         coverImgUrl : 0,
-        trackCount : 0    //歌曲数量
+        trackCount : 0,    //歌曲数量
+        subscribed: ''   //是否自己创建歌单
       }
     ],
-    loading: true
+    loading: true,
+    active: 0
   },
 
   /**
@@ -36,14 +38,24 @@ Page({
   onLoad: function (options) {
     this.userInfo();
     this.playlist();
+    console.log(app.globalData.uid)
+    // this.ce();
   },
+  // ce () {
+  //   getData('/playlist/detail',{
+  //     id:4865631151
+  //   }).then((res) => {
+  //    console.log(res)
+
+  //   })
+  // },
   /**
    * 获取用户信息
    * uid
    */
   userInfo () {
     let data = {
-      uid: app.globalData.userInfo.uId
+      uid: app.globalData.uid
     };
     getData('/user/detail',data).then((res) => {
       if (res.code == 200) {
@@ -57,7 +69,9 @@ Page({
             level: res.level
           }
         });
+        return false
       }
+      goTo('../login/login')
 
     })
   },
@@ -68,24 +82,33 @@ Page({
    */
   playlist () {
     let data = {
-      uid: app.globalData.userInfo.uId
+      uid: app.globalData.uid
     };
     getData('/user/playlist',data).then((res) => {
-      
       if (res.code == 200) {
+        let arr = [];
+        res.playlist.map((val,index) => {
+          let obj ={
+            name : val.name,
+            id : val.id,
+            coverImgUrl : val.coverImgUrl,
+            trackCount : val. trackCount,
+            subscribed : val.subscribed
+          }
+          arr.push(obj)
+        })
         this.setData({
-          playlist: [{
-            name : res.playlist.name,
-            id : res.playlist.id,
-            coverImgUrl : res.playlist.coverImgUrl,
-            trackCount : res.playlist.trackCount
-          }]
+          playlist: arr
         });
       }
 
     })
   },
 
+  go (e) {
+    let id = e.currentTarget.dataset.id;
+    goTo('../playInfo/playInfo?id=' + id)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

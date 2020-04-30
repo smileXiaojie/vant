@@ -32,6 +32,7 @@ function getData (url,data,method) {
         resolve(res.data)
       },
       fail (res) {
+        console.log(res)
         reject(res)
       },
       complete (res) {

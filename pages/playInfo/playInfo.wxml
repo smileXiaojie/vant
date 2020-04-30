@@ -1,0 +1,30 @@
+
+<view class="song">
+  <block wx:for="{{ list }}" wx:key="list">
+    <van-row>
+      <van-col span="2">
+        <view class="index">{{ index }}</view>
+      </van-col>
+      
+      <van-col span="18">
+        <view class="info" bindtap="info" data-id="{{ item.p_id }}" data-idx="{{ index }}">
+          <text class="tt ellips">{{ item.p_name }}</text>
+          <view class="name flex">
+            <view class="tag">独家</view>
+            <view class="t ellips">{{ item.ar_name }} - {{ item.al_name }}</view>
+          </view>
+        </view>
+      </van-col>
+
+      <van-col span="4">
+        <view class="icon">
+          <van-icon name="arrow" />
+        </view>
+      </van-col>
+
+    </van-row>
+
+  </block>
+</view>
+
+

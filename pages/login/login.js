@@ -36,10 +36,15 @@ Page({
       return false;
     }
     getData('/login/cellphone',data).then((res)=> {
+      
       if (res.code != 200) {
         showToast("登录失败");
         return false;
       }
+      wx.setStorage({
+        key:"uid",
+        data: res.profile.userId
+      })
       goTo('../index/index')
     })
   },

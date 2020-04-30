@@ -22,7 +22,10 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"bundle": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
@@ -60,7 +63,29 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "playInfo",
+					"pathName": "pages/playInfo/playInfo",
+					"query": "id=4865631151",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "id=4865631151",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/play/play",
+					"pathName": "pages/play/play",
+					"query": "id=31010566",
+					"scene": null
+				}
+			]
 		}
 	}
 }

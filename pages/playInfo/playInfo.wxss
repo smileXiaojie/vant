@@ -1,0 +1,44 @@
+.song{
+  background-color: #fff;
+}
+.song .index{
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #808080;
+}
+.song .info{
+  height: 100rpx;
+}
+.song .info .tt{
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.song .info .name{
+  font-size: 22rpx;
+  color: #808080;
+  line-height: 26rpx;
+}
+.song .info .tag{
+  display: inline-block;
+  width: 46rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 20rpx;
+  border: 2rpx solid #c20c0c;
+  border-radius: 6rpx;
+  color: #c20c0c;
+  text-align: center;
+  vertical-align: middle;
+}
+.song .info .t{
+  padding-left: 10rpx;
+}
+
+.song .icon{
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-right: 20rpx;
+}

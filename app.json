@@ -2,10 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/login/login",
-    
     "pages/user/user",
-    "pages/info/info"
-    
+    "pages/playInfo/playInfo",
+    "pages/play/play"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -24,6 +23,9 @@
     "uploadFile": 20000,
     "downloadFile": 20000
   },
+  
+  "requiredBackgroundModes": ["audio", "location"],
+
   "debug": true,
   "enablePullDownRefresh": true,
   "sitemapLocation": "sitemap.json",
@@ -33,6 +35,14 @@
     "van-skeleton": "miniprogram_npm/@vant/weapp/skeleton/index",
     "van-image": "miniprogram_npm/@vant/weapp/image/index",
     "van-cell": "miniprogram_npm/@vant/weapp/cell/index",
-    "van-cell-group": "miniprogram_npm/@vant/weapp/cell-group/index"
+    "van-cell-group": "miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-tab": "miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "miniprogram_npm/@vant/weapp/tabs/index",
+    "van-row": "miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "miniprogram_npm/@vant/weapp/col/index",
+    "van-tag": "miniprogram_npm/@vant/weapp/tag/index",
+    "van-icon": "miniprogram_npm/@vant/weapp/icon/index",
+    "van-notice-bar": "miniprogram_npm/@vant/weapp/notice-bar/index",
+    "van-slider": "miniprogram_npm/@vant/weapp/slider/index"
   }
 }
